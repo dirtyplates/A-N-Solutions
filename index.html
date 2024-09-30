@@ -49,8 +49,8 @@
         .wave {
             position: relative;
             width: 100%;
-            height: 150px; /* Adjust height for waves */
-            background: #e0f7fa;
+            height: 120px; /* Adjust height for waves */
+            background: #e0f7fa; /* Base color for waves */
         }
         .wave::before, .wave::after {
             content: '';
@@ -65,21 +65,62 @@
         .wave::before {
             left: 0;
             transform: translateY(100%);
-            background: rgba(173, 216, 230, 0.6); /* Light blue color */
+            background: rgba(70, 130, 180, 0.7); /* Darker light blue color */
         }
         .wave::after {
             right: 0;
             transform: translateY(100%);
-            background: rgba(135, 206, 250, 0.6); /* Slightly darker blue */
+            background: rgba(30, 144, 255, 0.7); /* Even darker blue */
         }
-        section {
+        .large-section {
             position: relative;
-            padding: 40px 0;
+            padding: 40px; /* Padding for the large section */
             background: white;
-            margin: 20px 0;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             z-index: 2; /* Bring sections above wave background */
+            margin: 20px auto; /* Centering with auto margins */
+            width: 100%; /* Full width for mobile */
+            max-width: 600px; /* Set a smaller max-width */
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+            .large-section {
+                padding: 20px; /* Reduce padding on mobile */
+            }
+            .wave {
+                height: 80px; /* Reduce height of waves on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .btn {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
         }
     </style>
 </head>
@@ -105,23 +146,15 @@
 
     <div class="wave"></div>
 
-    <section id="about-us" class="container">
+    <div class="large-section container">
         <h2>Welcome to A&N Solutions</h2>
         <p>Your trusted partner for transforming your home’s exterior.</p>
         <p>Focused on simplicity and quality, we help you get the job done with ease and professionalism.</p>
-    </section>
 
-    <div class="wave"></div>
-
-    <section id="check-out-work" class="container">
         <h2>Check out our work</h2>
         <p>Take a look at some of the projects we've completed. We believe our results speak for themselves.</p>
         <a href="gallery.html" class="btn">View Gallery</a>
-    </section>
 
-    <div class="wave"></div>
-
-    <section id="contact" class="container">
         <h2>Get in Touch</h2>
         <p>Have a question or need a quote? Reach out to us today!</p>
         <form id="contact-form">
@@ -136,7 +169,7 @@
 
             <button type="submit" class="btn">Submit</button>
         </form>
-    </section>
+    </div>
 
     <div class="wave"></div>
 
