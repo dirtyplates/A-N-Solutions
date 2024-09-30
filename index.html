@@ -17,9 +17,12 @@
     <script>
         // Check local storage for the 'visited' flag
         window.onload = function() {
+            const visited = localStorage.getItem('visited');
+            const visitedTime = localStorage.getItem('visitedTime');
+
             // Check if the user has already visited the welcome page
-            if (!localStorage.getItem('visited')) {
-                // Redirect to welcome page if not visited
+            if (!visited || (visitedTime && (Date.now() - visitedTime > 3600000))) {
+                // Redirect to welcome page if not visited or if more than an hour has passed
                 window.location.href = 'welcome.html';
             }
         };

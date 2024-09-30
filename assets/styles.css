@@ -1,13 +1,16 @@
+/* General Reset and Base Styles */
 body, html {
     height: 100%;
     margin: 0;
     font-family: 'Garamond', serif;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text for contrast */
 }
 
 header {
     padding: 15px;
-    background-color: #1a1a1a; /* Darker background for header */
+    background-color: #001f3f; /* Dark blue background for header */
     color: white;
     text-align: center;
 }
@@ -17,8 +20,9 @@ header {
     margin-bottom: 10px; /* Space below the logo */
 }
 
+/* Navigation Styles */
 nav {
-    background-color: #333; /* Background color for the nav */
+    background-color: #004080; /* Dark blue background for nav */
     color: white; /* Text color */
     padding: 10px 0; /* Padding around the nav */
 }
@@ -36,7 +40,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white; /* Link color */
+    color: #00BFFF; /* Bright blue link color */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Bold links */
     transition: color 0.3s; /* Transition effect for hover */
@@ -46,6 +50,7 @@ nav ul li a:hover {
     color: #ffa500; /* Change color on hover */
 }
 
+/* Section and Container Styles */
 section {
     max-width: 100%; /* Make sections full width */
     padding: 5px 15px; /* Adjust padding */
@@ -55,105 +60,35 @@ section {
 .container {
     max-width: 600px; /* Limit container width for better readability */
     margin: 0 auto; /* Center align */
+    padding: 15px; /* Add padding */
 }
 
-.btn {
+/* Button Styles */
+.btn, .cta-btn, .service-button {
     display: inline-block;
     padding: 8px 12px; /* Adjusted padding */
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 5px; /* Margin for spacing */
-}
-
-footer {
-    text-align: center;
-    padding: 10px 20px;
-    background-color: #1a1a1a;
-    color: white;
-}
-
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Garamond', serif;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-header {
-    padding: 15px;
-    background-color: #1a1a1a; /* Darker background for header */
-    color: white;
-    text-align: center;
-}
-
-.logo {
-    width: 120px; /* Logo size */
-    margin-bottom: 10px; /* Space below the logo */
-}
-
-nav {
-    background-color: #333; /* Background color for the nav */
-    color: white; /* Text color */
-    padding: 10px 0; /* Padding around the nav */
-}
-
-nav ul {
-    list-style-type: none; /* Remove bullets */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: center; /* Center the items */
-}
-
-nav ul li {
-    margin: 0 15px; /* Space between links */
-}
-
-nav ul li a {
-    color: white; /* Link color */
+    background-color: #004080; /* Dark blue button background */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded button */
     text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold links */
-    transition: color 0.3s; /* Transition effect for hover */
-}
-
-nav ul li a:hover {
-    color: #ffa500; /* Change color on hover */
-}
-
-section {
-    max-width: 100%; /* Make sections full width */
-    padding: 5px 15px; /* Adjust padding */
-    border-bottom: 1px solid #ccc; /* Optional: Divider between sections */
-}
-
-.container {
-    max-width: 600px; /* Limit container width for better readability */
-    margin: 0 auto; /* Center align */
-}
-
-.btn {
-    display: inline-block;
-    padding: 8px 12px; /* Adjusted padding */
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
     text-align: center;
+    transition: background-color 0.3s; /* Transition for hover effect */
     margin-top: 5px; /* Margin for spacing */
 }
 
+.btn:hover, .cta-btn:hover, .service-button:hover {
+    background-color: #00BFFF; /* Change button color on hover */
+}
+
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: #1a1a1a;
+    background-color: #001f3f; /* Dark blue footer background */
     color: white;
 }
 
-/* New styles for services grid */
-
+/* Services Grid Styles */
 #services-grid {
     padding: 20px 15px; /* Add padding around the services section */
 }
@@ -180,82 +115,7 @@ footer {
     transform: scale(1.05); /* Scale image on hover */
 }
 
-.service-button {
-    display: inline-block;
-    margin-top: 10px; /* Space above button */
-    padding: 10px 15px; /* Button padding */
-    background-color: #333; /* Button background */
-    color: white; /* Button text color */
-    border-radius: 5px; /* Rounded button */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Transition for hover effect */
-}
-
-.service-button:hover {
-    background-color: #ffa500; /* Change button color on hover */
-}
-
-
-/* Contact.. WAQAW*/
-
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Garamond', serif;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-header {
-    padding: 15px;
-    background-color: #1a1a1a; /* Darker background for header */
-    color: white;
-    text-align: center;
-}
-
-nav {
-    background-color: #333; /* Background color for the nav */
-    color: white; /* Text color */
-    padding: 10px 0; /* Padding around the nav */
-}
-
-nav ul {
-    list-style-type: none; /* Remove bullets */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: center; /* Center the items */
-}
-
-nav ul li {
-    margin: 0 15px; /* Space between links */
-}
-
-nav ul li a {
-    color: white; /* Link color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold links */
-    transition: color 0.3s; /* Transition effect for hover */
-}
-
-nav ul li a:hover {
-    color: #ffa500; /* Change color on hover */
-}
-
-.container {
-    max-width: 600px; /* Limit container width for better readability */
-    margin: 0 auto; /* Center align */
-    padding: 15px; /* Add padding */
-}
-
-footer {
-    text-align: center;
-    padding: 10px 20px;
-    background-color: #1a1a1a;
-    color: white;
-}
-
-/* New styles for contact section */
-
+/* Contact Section Styles */
 #contact-info {
     padding: 20px; /* Add padding around contact section */
     background-color: #f9f9f9; /* Light background color */
@@ -272,17 +132,18 @@ footer {
     line-height: 1.5; /* Increase line height for readability */
 }
 
-.cta-btn {
-    display: inline-block; /* Make button block */
-    margin-top: 10px; /* Space above button */
-    padding: 10px 15px; /* Button padding */
-    background-color: #333; /* Button background */
-    color: white; /* Button text color */
-    border-radius: 5px; /* Rounded button */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Transition for hover effect */
-}
+/* Additional Styles for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack nav links on smaller screens */
+        align-items: center; /* Center align items */
+    }
 
-.cta-btn:hover {
-    background-color: #ffa500; /* Change button color on hover */
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller items on smaller screens */
+    }
+
+    .container {
+        padding: 10px; /* Less padding on smaller screens */
+    }
 }

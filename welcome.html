@@ -8,77 +8,164 @@
     <link rel="stylesheet" href="assets/styles.css">
     <style>
         body, html {
-            height: 100%;
-            margin: 0;
-            font-family: 'Garamond', serif;
+            height: 100%; /* Make it tall like a giraffe */
+            margin: 0; /* No space, no problems */
+            font-family: 'Garamond', serif; /* Fancy font for fancy people */
         }
 
         .welcome-container {
-            background-image: url('assets/welcome-background.jpg'); /* Your background image */
-            background-size: cover;
-            background-position: center;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-image: url('assets/welcome-background.jpg'); /* Big picture for eye candy */
+            background-size: cover; /* Make it fill the whole thing */
+            background-position: center; /* Center it like a boss */
+            height: 100%; /* It's a tall container! */
+            display: flex; /* Use flexbox magic */
+            justify-content: center; /* Put stuff in the middle, like a hug */
+            align-items: center; /* Make it nice and cozy */
         }
 
         .welcome-box {
-            background-color: #ffffff; /* Solid white background */
-            padding: 40px;
-            text-align: center;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for the box */
-            transition: transform 0.3s ease;
-            position: relative;
+            background-color: #ffffff; /* White box to keep it simple */
+            padding: 40px; /* Soft pillow for the text */
+            text-align: center; /* Center the text like a pro */
+            border-radius: 12px; /* Round the corners, no sharp edges */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow so it looks cool */
+            transition: transform 0.3s ease; /* Smooth moves, baby */
+            position: relative; /* It's hanging out here */
         }
 
         .welcome-box h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a shadow to the text */
+            font-size: 2.5rem; /* Make the title big and loud */
+            margin-bottom: 20px; /* Space below like a tall drink */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for spooky vibes */
         }
 
         .welcome-box img {
-            width: 150px;
-            margin-bottom: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            width: 150px; /* Small image, not too big, not too small */
+            margin-bottom: 20px; /* Space below for breathing room */
+            display: block; /* Block it off */
+            margin-left: auto; /* Center it like a lazy cat */
+            margin-right: auto; /* Equal space on both sides */
         }
 
         .welcome-box p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Shadow for the paragraph text */
+            font-size: 1.2rem; /* Decent size for reading */
+            margin-bottom: 20px; /* More space for chill time */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Light shadow, not scary */
         }
 
         .welcome-box .btn {
-            padding: 12px 24px;
-            background-color: #000000;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for the button */
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            padding: 12px 24px; /* Soft button for happy fingers */
+            background-color: #000000; /* Black button, like night time */
+            color: white; /* White text, so you can see it */
+            border: none; /* No borders, just free spirit */
+            border-radius: 5px; /* A little round, like a happy jellybean */
+            font-size: 1rem; /* Regular size for normal people */
+            cursor: pointer; /* Pointer finger ready to click! */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for extra pizzazz */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth changes, like magic */
         }
 
         .welcome-box .btn:hover {
-            background-color: #615c61;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+            background-color: #615c61; /* Change color when you hover, like a chameleon */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Shadow gets bigger when you hover, wow! */
         }
     </style>
 </head>
 <body>
     <div class="welcome-container">
         <div class="welcome-box">
-            <img src="assets/logo.png" alt="A&N Solutions Logo">
-            <h1>Welcome to A&N Solutions</h1>
-            <p>Pressure Washing | Painting | Deck Building</p>
-            <button class="btn" onclick="window.localStorage.setItem('visited', 'true'); window.location.href='index.html'">Continue</button>
+            <img src="assets/logo.png" alt="A&N Solutions Logo"> <!-- Here’s our logo, yay! -->
+            <h1>Welcome to A&N Solutions</h1> <!-- Big welcome sign! -->
+            <p>Pressure Washing | Painting | Deck Building</p> <!-- Stuff we do, like magic! -->
+            <button class="btn" onclick="window.localStorage.setItem('visited', 'true'); window.location.href='index.html'">Continue</button> <!-- Click to go to the next page, woohoo! -->
         </div>
     </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>A&N Solutions - Pressure Washing, Painting & Deck Building</title>
+    <link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <style>
+        body, html {
+            height: 100%; /* Taller than a building */
+            margin: 0; /* No mess here! */
+            font-family: 'Garamond', serif; /* Pretty font for pretty folks */
+            overflow-x: hidden; /* No sideways scrolling, please! */
+        }
+    </style>
+    <script>
+        // Load this when the page wakes up
+        window.onload = function() {
+            // Check if you’ve been here before
+            if (!localStorage.getItem('visited')) {
+                // Go to the welcome page if you're a newbie
+                window.location.href = 'welcome.html';
+            }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="nav-menu" class="hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Where you live -->
+                <li><a href="gallery.html">Photos</a></li> <!-- Pictures of our awesome stuff -->
+                <li><a href="contact.html">Contact</a></li> <!-- Say hi! -->
+            </ul>
+        </nav>
+        <div class="container">
+            <img src="assets/logo.png" alt="A&N Solutions Logo" class="logo"> <!-- Here’s our cool logo! -->
+            <h1>A&N Solutions</h1> <!-- Big name up top -->
+            <p>Pressure Washing | Painting | Deck Building</p> <!-- More magic words -->
+        </div>
+    </header>
+
+    <section id="about-us" class="container">
+        <h2>Welcome to A&N Solutions</h2>
+        <p>Your trusted partner for transforming your home’s interior and exterior. Focused on simplicity and quality, we help you get the job done with ease and professionalism.</p> <!-- We do cool stuff for your house -->
+    </section>
+
+    <section id="check-out-work" class="container">
+        <h2>Check out our work</h2>
+        <p>Take a look at some of the projects we've completed. We believe our results speak for themselves.</p>
+        <a href="gallery.html" class="btn">View Gallery</a> <!-- Click here to see our cool work! -->
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Get in Touch</h2>
+        <p>Have a question or need a quote? Reach out to us today!</p> <!-- Wanna chat? -->
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn">Submit</button> <!-- Hit this to send your words! -->
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 A&N Solutions. All rights reserved.</p> <!-- We own this stuff! -->
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
 </body>
 </html>
