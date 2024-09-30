@@ -2,125 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>A&N Solutions - Pressure Washing, Painting & Deck Building</title>
     <link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
     <style>
         body, html {
+            height: 100%;
             margin: 0;
             font-family: 'Garamond', serif;
-            background-color: #f0f0f0; /* Light background for contrast */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
+
         header {
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        h2 {
-            font-size: 2rem;
-            margin: 20px 0;
-        }
-        p {
-            font-size: 1.2rem;
-            margin: 10px 0;
-        }
-        .btn {
-            padding: 10px 20px;
-            background-color: #000000;
+            padding: 15px;
+            background-color: #1a1a1a; /* Darker background for header */
             color: white;
-            border: none;
+            text-align: center;
+        }
+
+        section {
+            max-width: 100%; /* Make sections full width */
+            padding: 5px 15px; /* Adjust padding */
+            border-bottom: 1px solid #ccc; /* Optional: Divider between sections */
+        }
+
+        .container {
+            max-width: 600px; /* Limit container width for better readability */
+            margin: 0 auto; /* Center align */
+        }
+
+        .logo {
+            width: 120px; /* Adjust size to make it smaller */
+            margin-bottom: 10px; /* Space below the logo */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 12px; /* Adjusted padding */
+            background-color: #333;
+            color: white;
             border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background-color: #615c61;
-        }
-        .wave {
-            position: relative;
-            width: 100%;
-            height: 120px; /* Adjust height for waves */
-            background: #e0f7fa; /* Base color for waves */
-        }
-        .wave::before, .wave::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            width: 200%;
-            height: 100%;
-            background: inherit;
-            border-radius: 50%;
-            z-index: 1;
-        }
-        .wave::before {
-            left: 0;
-            transform: translateY(100%);
-            background: rgba(70, 130, 180, 0.7); /* Darker light blue color */
-        }
-        .wave::after {
-            right: 0;
-            transform: translateY(100%);
-            background: rgba(30, 144, 255, 0.7); /* Even darker blue */
-        }
-        .large-section {
-            position: relative;
-            padding: 40px; /* Padding for the large section */
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 2; /* Bring sections above wave background */
-            margin: 20px auto; /* Centering with auto margins */
-            width: 100%; /* Full width for mobile */
-            max-width: 600px; /* Set a smaller max-width */
+            text-decoration: none;
+            text-align: center;
+            margin-top: 5px; /* Margin for spacing */
         }
 
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
-            p {
-                font-size: 1rem;
-            }
-            .btn {
-                padding: 8px 16px;
-                font-size: 0.9rem;
-            }
-            .large-section {
-                padding: 20px; /* Reduce padding on mobile */
-            }
-            .wave {
-                height: 80px; /* Reduce height of waves on mobile */
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-            h2 {
-                font-size: 1.2rem;
-            }
-            p {
-                font-size: 0.9rem;
-            }
-            .btn {
-                padding: 6px 12px;
-                font-size: 0.8rem;
-            }
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #1a1a1a;
+            color: white;
         }
     </style>
 </head>
@@ -139,22 +71,24 @@
             </ul>
         </nav>
         <div class="container">
+            <img src="assets/logo.png" alt="A&N Solutions Logo" class="logo">
             <h1>A&N Solutions</h1>
             <p>Pressure Washing | Painting | Deck Building</p>
         </div>
     </header>
 
-    <div class="wave"></div>
-
-    <div class="large-section container">
+    <section id="about-us" class="container">
         <h2>Welcome to A&N Solutions</h2>
-        <p>Your trusted partner for transforming your home’s exterior.</p>
-        <p>Focused on simplicity and quality, we help you get the job done with ease and professionalism.</p>
+        <p>Your trusted partner for transforming your home’s exterior. Focused on simplicity and quality, we help you get the job done with ease and professionalism.</p>
+    </section>
 
+    <section id="check-out-work" class="container">
         <h2>Check out our work</h2>
         <p>Take a look at some of the projects we've completed. We believe our results speak for themselves.</p>
         <a href="gallery.html" class="btn">View Gallery</a>
+    </section>
 
+    <section id="contact" class="container">
         <h2>Get in Touch</h2>
         <p>Have a question or need a quote? Reach out to us today!</p>
         <form id="contact-form">
@@ -169,9 +103,7 @@
 
             <button type="submit" class="btn">Submit</button>
         </form>
-    </div>
-
-    <div class="wave"></div>
+    </section>
 
     <footer>
         <div class="container">
