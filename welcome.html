@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to A&N Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Garamond', serif;
+        }
+
+        .welcome-container {
+            background-image: url('assets/welcome-background.jpg'); /* Your background image */
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .welcome-box {
+            background-color: #ffffff; /* Solid white background */
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker, deeper shadow for the box */
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden; /* Make sure inner waves stay inside */
+        }
+
+        /* Outer Left Wave */
+        .welcome-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -40px;
+            height: 100%;
+            width: 40px;
+            background: linear-gradient(180deg, #00aaff 25%, transparent 25%) repeat-y;
+            background-size: 100% 40px;
+            border-radius: 0 50% 50% 0;
+        }
+
+        /* Outer Right Wave */
+        .welcome-box::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -40px;
+            height: 100%;
+            width: 40px;
+            background: linear-gradient(180deg, #00aaff 25%, transparent 25%) repeat-y;
+            background-size: 100% 40px;
+            border-radius: 50% 0 0 50%;
+        }
+
+        /* Inner Waves */
+        .inner-wave1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: #d0f0fd;
+            border-radius: 0 0 50% 50%;
+            z-index: 1;
+        }
+
+        .inner-wave2 {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: #b0e3fb;
+            border-radius: 0 0 50% 50%;
+            z-index: 2;
+        }
+
+        .inner-wave3 {
+            position: absolute;
+            top: 200px;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: #90d7f8;
+            border-radius: 0 0 50% 50%;
+            z-index: 3;
+        }
+
+        .welcome-box h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a shadow to the text */
+            position: relative;
+            z-index: 4; /* Ensures text stays above the waves */
+        }
+
+        .welcome-box img {
+            width: 150px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 4; /* Ensures image stays above the waves */
+        }
+
+        .welcome-box p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Shadow for the paragraph text */
+            position: relative;
+            z-index: 4;
+        }
+
+        .welcome-box .btn {
+            padding: 12px 24px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for the button */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            z-index: 4;
+        }
+
+        .welcome-box .btn:hover {
+            background-color: #615c61;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="welcome-box">
+            <div class="inner-wave1"></div>
+            <div class="inner-wave2"></div>
+            <div class="inner-wave3"></div>
+            <img src="assets/logo.png" alt="A&N Solutions Logo">
+            <h1>Welcome to A&N Solutions</h1>
+            <p>Pressure Washing | Painting | Deck Building</p>
+            <button class="btn" onclick="window.location.href='index.html'">Continue</button>
+        </div>
+    </div>
+</body>
+</html>
