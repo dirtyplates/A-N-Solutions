@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta http-equiv="refresh" content="5;url=index.html">
     <title>A&N Solutions - Pressure Washing, Painting & Deck Building</title>
     <link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
@@ -14,48 +13,17 @@
             font-family: 'Garamond', serif;
             overflow-x: hidden; /* Prevent horizontal scrolling */
         }
-
-        header {
-            padding: 15px;
-            background-color: #1a1a1a; /* Darker background for header */
-            color: white;
-            text-align: center;
-        }
-
-        section {
-            max-width: 100%; /* Make sections full width */
-            padding: 5px 15px; /* Adjust padding */
-            border-bottom: 1px solid #ccc; /* Optional: Divider between sections */
-        }
-
-        .container {
-            max-width: 600px; /* Limit container width for better readability */
-            margin: 0 auto; /* Center align */
-        }
-
-        .logo {
-            width: 120px; /* Adjust size to make it smaller */
-            margin-bottom: 10px; /* Space below the logo */
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 8px 12px; /* Adjusted padding */
-            background-color: #333;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            text-align: center;
-            margin-top: 5px; /* Margin for spacing */
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px 20px;
-            background-color: #1a1a1a;
-            color: white;
-        }
     </style>
+    <script>
+        // Check local storage for the 'visited' flag
+        window.onload = function() {
+            // Check if the user has already visited the welcome page
+            if (!localStorage.getItem('visited')) {
+                // Redirect to welcome page if not visited
+                window.location.href = 'welcome.html';
+            }
+        };
+    </script>
 </head>
 <body>
     <header>
