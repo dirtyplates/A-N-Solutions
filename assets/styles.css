@@ -4,13 +4,11 @@ body, html {
     margin: 0;
     font-family: 'Garamond', serif;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    background-color: #1a1a1a; /* Dark background */
-    color: #ffffff; /* White text for contrast */
 }
 
 header {
     padding: 15px;
-    background-color: #001f3f; /* Dark blue background for header */
+    background-color: #1a1a1a; /* Darker background for header */
     color: white;
     text-align: center;
 }
@@ -22,7 +20,7 @@ header {
 
 /* Navigation Styles */
 nav {
-    background-color: #004080; /* Dark blue background for nav */
+    background-color: #333; /* Background color for the nav */
     color: white; /* Text color */
     padding: 10px 0; /* Padding around the nav */
 }
@@ -40,7 +38,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00BFFF; /* Bright blue link color */
+    color: white; /* Link color */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Bold links */
     transition: color 0.3s; /* Transition effect for hover */
@@ -67,7 +65,7 @@ section {
 .btn, .cta-btn, .service-button {
     display: inline-block;
     padding: 8px 12px; /* Adjusted padding */
-    background-color: #004080; /* Dark blue button background */
+    background-color: #333; /* Button background */
     color: white; /* Button text color */
     border-radius: 5px; /* Rounded button */
     text-decoration: none; /* Remove underline */
@@ -77,14 +75,14 @@ section {
 }
 
 .btn:hover, .cta-btn:hover, .service-button:hover {
-    background-color: #00BFFF; /* Change button color on hover */
+    background-color: #ffa500; /* Change button color on hover */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
     padding: 10px 20px;
-    background-color: #001f3f; /* Dark blue footer background */
+    background-color: #1a1a1a;
     color: white;
 }
 
@@ -146,4 +144,31 @@ footer {
     .container {
         padding: 10px; /* Less padding on smaller screens */
     }
+}
+
+/* Decks Gallery Styles */
+.gallery-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid */
+}
+
+.deck-item {
+    text-align: center; /* Center align text and images */
+    background-color: #f9f9f9; /* Light background for items */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.deck-item:hover {
+    transform: scale(1.05); /* Scale item on hover */
+}
+
+.deck-item img {
+    width: 100%; /* Make images responsive */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
 }
